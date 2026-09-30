@@ -1,0 +1,18 @@
+{
+  "rewrites": [
+    { "source": "/etiquetas", "destination": "https://react-barcod1.vercel.app/" },
+    { "source": "/etiquetas/:path*", "destination": "https://react-barcod1.vercel.app/:path*" },
+
+    { "source": "/crm", "destination": "https://crm.dechinaalmundo.com.ar/" },
+    { "source": "/crm/:path*", "destination": "https://crm.dechinaalmundo.com.ar/:path*" },
+
+    { "source": "/dashboard", "destination": "https://nefa-b7mb-beta.vercel.app/" },
+    { "source": "/dashboard/:path*", "destination": "https://nefa-b7mb-beta.vercel.app/:path*" },
+
+    { "source": "/cotizador", "destination": "https://cotizador-comex.vercel.app/" },
+    { "source": "/cotizador/:path*", "destination": "https://cotizador-comex.vercel.app/:path*" },
+
+    { "source": "/whatsmasivo", "destination": "https://whatsapp-sender-hex1.vercel.app/" },
+    { "source": "/whatsmasivo/:path*", "destination": "https://whatsapp-sender-hex1.vercel.app/:path*" }
+  ]
+}

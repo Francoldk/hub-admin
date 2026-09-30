@@ -27,15 +27,33 @@
       box-shadow: 0 20px 60px rgba(0,0,0,.4);
     }
 
-    h1 {
-      font-size: 28px;
-      margin-bottom: 8px;
+    /* LOGO + TITULO */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .header img {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: #0f172a;
+      padding: 6px;
+    }
+    .header-text h1 {
+      font-size: 24px;
       background: linear-gradient(90deg, #38bdf8, #a78bfa);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
-
-    .sub { color: #94a3b8; margin-bottom: 32px; font-size: 14px; }
+    .header-text .sub {
+      color: #94a3b8;
+      font-size: 13px;
+      margin-top: 2px;
+    }
 
     /* LOGIN */
     #loginView input {
@@ -106,8 +124,13 @@
 </head>
 <body>
   <div class="card">
-    <h1>De China al Mundo</h1>
-    <p class="sub">Panel de administración</p>
+    <div class="header">
+      <img src="/logo.png" alt="De China al Mundo" />
+      <div class="header-text">
+        <h1>De China al Mundo</h1>
+        <p class="sub">Panel de administración</p>
+      </div>
+    </div>
 
     <!-- LOGIN -->
     <div id="loginView">
@@ -120,27 +143,27 @@
     <!-- SOLAPAS -->
     <div id="panelView" class="hidden">
       <div class="tabs">
-        <a class="tab" href="/etiquetas">
+        <a class="tab" href="https://react-barcod1.vercel.app/">
           <span class="icon">🏷️</span>
           <span class="name">Etiquetas</span>
           <span class="desc">Generador de códigos de barras</span>
         </a>
-        <a class="tab" href="/cotizador">
+        <a class="tab" href="https://cotizador-comex.vercel.app/">
           <span class="icon">🧮</span>
           <span class="name">Cotizador</span>
           <span class="desc">Cotizaciones de comercio exterior</span>
         </a>
-        <a class="tab" href="/crm">
+        <a class="tab" href="https://crm.dechinaalmundo.com.ar">
           <span class="icon">👥</span>
           <span class="name">CRM</span>
           <span class="desc">Gestión de clientes</span>
         </a>
-        <a class="tab" href="/dashboard">
+        <a class="tab" href="https://nefa-b7mb-beta.vercel.app/">
           <span class="icon">📊</span>
           <span class="name">Dashboard</span>
           <span class="desc">Métricas y reportes</span>
         </a>
-        <a class="tab" href="/whatsmasivo">
+        <a class="tab" href="https://whatsapp-sender-hex1.vercel.app/">
           <span class="icon">💬</span>
           <span class="name">Whats Masivo</span>
           <span class="desc">Envío masivo de WhatsApp</span>
